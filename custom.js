@@ -13,7 +13,7 @@ $('#botao').on('click', function(e){
 });
 
 $('#apagar').on('click', function(e){
-	
+	$tarefa=$("#texto").val();
 	var botoes = document.getElementsByClassName("yourCheckBox");
     $("#tarefa").remove("<p>"+$tarefa+"</p>");
 
