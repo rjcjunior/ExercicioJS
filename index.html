@@ -22,16 +22,29 @@
 
 <body>
    <head>
-      <form>
-      <div id="principal">
-          <input type="text" id="texto">
-          <input type="submit" id="botao">
-          <input type="submit" id="apagar" value="apagar">
-          <p id="tarefa"></p>
-      </form>
-      </div>
+      <h1>Tarefas</h1>
 
-      
+      <form>
+          
+          <p>Adicionar</p>
+          <input id="tarefa" type="text" />
+          <input type="button" value="Adicionar" id="adc" /><br><br>
+          
+          <p>Editar</p>
+          <label for="editar">ID da tarefa:</label>
+          <input id="editar" type="text" />
+          <label for="novovalor">Novo nome:</label>
+          <input id="novovalor" type="text" />
+          <input type="button" value="mudar" id="mudar" /><br><br>
+          
+          <p>Excluir</p>
+          <label for="excluir">ID da tarefa:</label>
+          <input id="excluir" type="text" />
+          <input type="button" value="apagar" id="apagar" /><br><br>
+          
+      </form>
+      <ul id="tarefas">
+      </ul>
    </head>
    
    <footer>
